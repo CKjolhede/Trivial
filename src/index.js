@@ -15,3 +15,20 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+const question = {
+  questionText: "To what family does the wolverine belong?",
+  a: "canidae",
+  b: "felidae",
+  c: "mustelids",
+  d: "muridae",
+  correctAnswer: "c"
+}
+
+"To what family does the wolverine belong?"
+
+a: canidae
+b: felidae
+c: mustelids
+d: muridae
