@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="LwFgf9WUw9VXeG08LobR" name="Page-1">
-        <mxGraphModel dx="3153" dy="2570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="3153" dy="2175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -67,11 +67,11 @@
                 <mxCell id="28" value="Start Game Button" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=24;" parent="23" vertex="1">
                     <mxGeometry x="390" y="110" width="125" height="125" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Game" style="swimlane;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="34" value="Game (View 1)" style="swimlane;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="1160" y="660" width="870" height="610" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" value="Current Question" style="swimlane;fontSize=24;" parent="34" vertex="1">
-                    <mxGeometry x="260" y="90" width="454" height="330" as="geometry"/>
+                    <mxGeometry x="260" y="120" width="454" height="330" as="geometry"/>
                 </mxCell>
                 <mxCell id="37" value="Player 1&amp;nbsp;&lt;br&gt;Score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="34" vertex="1">
                     <mxGeometry x="80" y="50" width="60" height="30" as="geometry"/>
@@ -84,6 +84,21 @@
                 </mxCell>
                 <mxCell id="39" value="const question = {&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&amp;nbsp;&lt;/span&gt;&amp;nbsp; &amp;nbsp;question: &quot;Text&quot;,&lt;/span&gt;&lt;/div&gt;a; &quot;text&quot;,&lt;br&gt;b: &quot;text&quot;,&lt;br&gt;c: &quot;text&quot;,&lt;br&gt;d: &quot;text&quot;,&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;answer: &quot;text&quot;&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="-330" y="1090" width="807" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Game (View 2)" style="swimlane;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="1350" width="870" height="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Current Question" style="swimlane;fontSize=24;" vertex="1" parent="44">
+                    <mxGeometry x="260" y="90" width="454" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Player 1&amp;nbsp;&lt;br&gt;Score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="44">
+                    <mxGeometry x="80" y="50" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Correct!&lt;br&gt;(or)&lt;br&gt;Incorrect!" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="44">
+                    <mxGeometry x="306.25" y="220" width="361.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Player 2 Score" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="44">
+                    <mxGeometry x="760" y="60" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
