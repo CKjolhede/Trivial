@@ -1,0 +1,30 @@
+{
+  "questionsArray": [
+    {
+      "number": 1,
+      "question": "This is a question? ",
+      "A": "Answer A ",
+      "B": "Answer B ",
+      "C": "Answer C ",
+      "D": "Answer D ",
+      "Answer": "A"
+    },
+		{
+      "number": 2,
+      "question": "This is also a question? ",
+      "A": "Answer A ",
+      "B": "Answer B ",
+      "C": "Answer C ",
+      "D": "Answer D ",
+      "Answer": "D"
+    },
+		{
+      "number": 3,
+      "question": "This is a question too? ",
+      "A": "Answer A ",
+      "B": "Answer B ",
+      "C": "Answer C ",
+      "D": "Answer D ",
+      "Answer": "B"
+    }]
+}
