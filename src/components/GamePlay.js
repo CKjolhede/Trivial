@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 import QuestionCard from "./QuestionCard";
-import ResponseCard from "./ResponseCard";
 import Scoreboard from "./Scoreboard";
 
 // import questionsArray from "../db.json";
@@ -49,7 +48,6 @@ function GamePlay() {
         <div>
             <Scoreboard player1={player1} player2={player2} />
             <QuestionCard question={sampleQuestion} startNewTurn={startNewTurn} />
-            <ResponseCard />
         </div>
     )
 }
