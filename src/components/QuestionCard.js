@@ -3,15 +3,21 @@ import React, {useState} from "react";
 function QuestionCard( {question} ) {
     const [questionStatus, setQuestionStatus] = useState("unanswered");
 
+    function handleSelection(selection) {
+        (question[selection] === question.correctAnswer) ? 
+            setQuestionStatus("correct") : 
+            setQuestionStatus("incorrect")
+    }
+
     switch(questionStatus) {
         case "unanswered":
             return (
                 <div>
                     <h3>{question.text}</h3>
-                    <p>{question.a}</p>
-                    <p>{question.b}</p>
-                    <p>{question.c}</p>
-                    <p>{question.d}</p>
+                    <p onClick={() => handleSelection("a")}>{question.a}</p>
+                    <p onClick={() => handleSelection("b")}>{question.b}</p>
+                    <p onClick={() => handleSelection("c")}>{question.c}</p>
+                    <p onClick={() => handleSelection("d")}>{question.d}</p>
                 </div>
             )
         case "correct":
