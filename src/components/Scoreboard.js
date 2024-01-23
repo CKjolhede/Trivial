@@ -6,9 +6,9 @@ function Scoreboard({
 }) {
     return (
         <div>
-            <h2>Player 1</h2>
+            <h2>{player1.name}</h2>
             <h3>{player1.score}</h3>
-            <h2>Player 2</h2>
+            <h2>{player2.name}</h2>
             <h3>{player2.score}</h3>
         </div>
     )
