@@ -3,12 +3,27 @@ import React, {useState} from "react";
 function QuestionCard( {question} ) {
     const [questionStatus, setQuestionStatus] = useState("unanswered");
 
-    function handleSelection(selection) {
-        (question[selection] === question.correctAnswer) ? 
-            setQuestionStatus("correct") : 
-            setQuestionStatus("incorrect")
+    function handleCorrectAnswer() {
+        setQuestionStatus("correct");
+        // update score of currentPlayer
+        // after 3 seconds, startNewTurn()
+            // toggle currentPLayer
+            // reset currentQuestion
     }
 
+    function handleIncorrectAnswer() {
+        setQuestionStatus("incorrect");
+        // after 5 seconds, startNewTurn()
+            // toggle currentPlayer()
+            // reset currentQuestion
+    }
+    
+    function handleSelection(selection) {
+        (question[selection] === question.correctAnswer) ? 
+            handleCorrectAnswer() : 
+            handleIncorrectAnswer() ;
+    }
+    
     switch(questionStatus) {
         case "unanswered":
             return (
@@ -26,7 +41,7 @@ function QuestionCard( {question} ) {
             return (
                 <div>
                     <h3>Incorrect!</h3>
-                    <h2>{question.text}</h2>
+                    <h4>{question.text}</h4>
                     <p>Correct Answer: {question.correctAnswer}</p>
                 </div>
             )

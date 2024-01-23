@@ -3,6 +3,8 @@ import ResponseCard from "./ResponseCard";
 import Scoreboard from "./Scoreboard";
 
 function GamePlay() {
+    // state: currentPlayer
+    
     const sampleQuestion = {
         text: "Which of these dog breeds is dolichocephalic?",
         a: "Kuvasz",
@@ -11,6 +13,8 @@ function GamePlay() {
         d: "French Bulldog",
         correctAnswer: "Borzoi"
     }
+
+    
     
     return (
         <div>
