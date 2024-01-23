@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function QuestionCard( {question} ) {
+function QuestionCard({ question }) {
     const [questionStatus, setQuestionStatus] = useState("unanswered");
 
     function handleCorrectAnswer() {
@@ -36,13 +36,19 @@ function QuestionCard( {question} ) {
                 </div>
             )
         case "correct":
-            return <h3>Correct!</h3>
+            return (
+                <div>
+                    <h3>Correct!</h3>
+                    <button>Next</button>
+                </div>
+            )
         case "incorrect":
             return (
                 <div>
                     <h3>Incorrect!</h3>
                     <h4>{question.text}</h4>
                     <p>Correct Answer: {question.correctAnswer}</p>
+                    <button>Next</button>
                 </div>
             )
     }
