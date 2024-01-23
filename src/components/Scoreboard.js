@@ -1,8 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Scoreboard() {
+function Scoreboard({
+    player1,
+    player2
+}) {
     return (
-        <h2>Scoreboard rendered!</h2>
+        <div>
+            <h2>{player1.name}</h2>
+            <h3>{player1.score}</h3>
+            <h2>{player2.name}</h2>
+            <h3>{player2.score}</h3>
+        </div>
     )
 }
 
