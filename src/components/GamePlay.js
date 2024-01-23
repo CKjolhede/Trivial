@@ -3,11 +3,20 @@ import ResponseCard from "./ResponseCard";
 import Scoreboard from "./Scoreboard";
 
 function GamePlay() {
+    const sampleQuestion = {
+        text: "Which of these dog breeds is dolichocephalic?",
+        a: "Kuvasz",
+        b: "Golden Retriever",
+        c: "Borzoi",
+        d: "French Bulldog",
+        correctAnswer: "Borzoi"
+    }
+    
     return (
         <div>
             <h1>GamePlay rendered!</h1>
             <Scoreboard />
-            <QuestionCard />
+            <QuestionCard question={sampleQuestion} />
             <ResponseCard />
         </div>
     )
