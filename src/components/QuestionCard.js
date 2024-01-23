@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 
 function QuestionCard( {question} ) {
-    const x = "unanswered";
+    const [questionStatus, setQuestionStatus] = useState("unanswered");
 
-    switch(x) {
+    switch(questionStatus) {
         case "unanswered":
             return (
                 <div>
@@ -21,7 +21,7 @@ function QuestionCard( {question} ) {
                 <div>
                     <h3>Incorrect!</h3>
                     <h2>{question.text}</h2>
-                    <p>{question.correctAnswer}</p>
+                    <p>Correct Answer: {question.correctAnswer}</p>
                 </div>
             )
     }
