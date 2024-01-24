@@ -1,5 +1,17 @@
-{
-  "questionsArray": [
+{ 
+	"teams": [
+		{
+		"team1Num": "1",
+		"team2Num": "2",
+		"team1Name": "",
+		"team2Name": "",
+		"team1Score": 0,
+		"team2Score": 0 
+		}
+.	]
+}
+{	
+  "questions": [
     {
       "number": 1,
       "question": "This is a question? ",
